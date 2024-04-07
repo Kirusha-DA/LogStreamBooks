@@ -1,0 +1,13 @@
+spring:
+    application:
+        name: books
+
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://${PSQL_HOST:localhost}:${PSQL_PORT:5432}/${PSQL_DB_NAME:books}
+        username: ${PQSL_USER:kirill}
+        password: ${PSQL_PWD:123}
+
+    sql:
+        init:
+            mode: always
